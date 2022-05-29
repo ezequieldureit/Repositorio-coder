@@ -19,7 +19,7 @@
 
 /* HERO CSS */
 .hero {
-  background: url("..img/home-img.jpg") center/cover;
+  background: url("../img/home-img.jpg") center/cover;
   height: 700px;
   position: relative;
   display: flex;
