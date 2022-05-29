@@ -1,0 +1,442 @@
+/* FONT CHARGE */
+@font-face {
+    font-family: "HKGrotesk-Regular";
+    src: url(/fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf);
+  }
+  
+  /* RESET CSS AND GENERAL FONT SELECTION*/
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "HKGrotesk-Regular";
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .header__logo img {
+    width: 200px;
+    display: flex;
+  }
+  
+  .menu-header {
+    display: flex;
+    padding-right: 50px;
+  }
+  
+  .menu-header__item a {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+  }
+  
+  .menu-header__item :hover {
+    color: blueviolet;
+  }
+  
+  .menu-header__item--selected a {
+    color: blueviolet;
+  }
+  
+  .menu-header__item--social a img {
+    width: 30px;
+    height: 20px;
+  }
+  
+  .hero {
+    background: url("/img/home-img.jpg") center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5;
+  }
+  
+  .hero__info {
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
+  
+  .hero__title {
+    line-height: 1.5;
+    font-size: 3em;
+  }
+  
+  .hero__p {
+    line-height: 2;
+    font-size: 1em;
+  }
+  
+  .logosClientes {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 400px;
+    padding-top: 70px;
+  }
+  
+  .logosClientes__titulo {
+    line-height: 1,5;
+    font-size: 3em;
+  }
+  
+  .logosClientes__principal {
+    display: flex;
+  }
+  
+  .logosClientes__items {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .logosClientes__items a img {
+    width: 100px;
+  }
+  
+  .quienesSomos {
+    background-color: #392f5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1300px;
+    padding-top: 70px;
+  }
+  
+  .quienesSomos__titulo {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 3em;
+    color: white;
+  }
+  
+  .quienesSomos__p {
+    line-height: 2;
+    font-size: 1em;
+    padding-top: 30px;
+    color: white;
+  }
+  
+  .quienesSomos__video {
+    padding: 10px;
+    width: 50%;
+    margin-top: 40px;
+    border-radius: 3rem;
+  }
+  
+  .quienesSomos__img {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .quienesSomos__imgs img {
+    width: 300px;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  
+  .quienesSomos__imgs p {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .servicios {
+    display: flex;
+  }
+  
+  .servicios__left {
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+  }
+  
+  .servicios__right {
+    background: url("/img/servicios/img2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+  }
+  
+  .servicios__left h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 300px;
+  }
+  
+  .servicios__left p {
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .servicios__link {
+    text-align: center;
+  }
+  
+  .servicios__link a {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+  }
+  
+  .servicios2 {
+    display: flex;
+  }
+  
+  .servicios2__left {
+    background: url("/img/servicios/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+  }
+  
+  .servicios2__right {
+    background-color: #392f5a;
+    height: 100vh;
+    width: 50%;
+  }
+  
+  .servicios2__right h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 300px;
+  }
+  
+  .servicios2__right p {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .servicios2__link {
+    text-align: center;
+  }
+  
+  .servicios2__link a {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+  }
+  
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+    padding-top: 70px;
+  }
+  
+  .portfolio h1 {
+    line-height: 1.5;
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  
+  .portfolio__principal {
+    display: flex;
+  }
+  
+  .portfolio__img a img {
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .contacto {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #392f5a;
+    height: 50vh;
+  }
+  
+  .contacto__left h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  .contacto__left a {
+    color: white;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .contacto__medium h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  .contacto__medium p {
+    color: white;
+    padding: 10px;
+  }
+  
+  .contacto__right img {
+    width: 400px;
+    padding-right: 50px;
+  }
+  
+  footer {
+    height: 50px;
+    text-align: center;
+  }
+  
+  footer p {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .hero--quienesSomos {
+    background-image: url("../img/quienessomos/hero-quienessomos.jpg");
+    justify-content: flex-start;
+  }
+  
+  .hero--servicios {
+    background-image: url("../img/servicios/hero-servicios.jpg");
+    justify-content: flex-start;
+  }
+  
+  .hero--portfolio {
+    background-image: url("../img/portfolio/hero-portfolio.jpg");
+    justify-content: flex-start;
+  }
+  
+  .hero--contacto {
+    background-image: url("../img/contacto/hero-contacto.jpg");
+    justify-content: flex-start;
+  }
+  
+  .servicios2__left--modificado {
+    background: url("/img/quienessomos/who5.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+  }
+  
+  .quienesSomos--modificado {
+    background-color: white;
+  }
+  
+  .quienesSomos__titulo--modificado {
+    color: black;
+  }
+  
+  .quienesSomos__p--modificado {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .quienesSomos--modificado {
+    height: 700px;
+  }
+  
+  .quienesSomos__imgs-modificados p {
+    color: black;
+  }
+  
+  /* FORMULARIO DE CONTACTO */
+  .formulario {
+    padding: 200px;
+  }
+  
+  .form-consulta {
+    max-width: 500px;
+    background: #392f5a;
+    padding: 25px;
+    color: #fff;
+  }
+  
+  .campo-form {
+    width: 100%;
+    height: 50px;
+    margin: 2px 0 6px;
+    padding-left: 6px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0;
+    font-size: 1em;
+  }
+  
+  label span {
+    color: #f00;
+  }
+  
+  textarea {
+    min-height: 150px !important;
+  }
+  
+  .btn-form {
+    display: inline-block;
+    border: 0;
+    background: #000;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .btn-form:hover {
+    background: #444;
+  }
+  
