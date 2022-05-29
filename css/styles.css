@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "HKGrotesk-Regular";
-  src: url(/fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf); }
+  src: url(../fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf); }
 
 /* RESET CSS AND GENERAL FONT SELECTION*/
 * {
