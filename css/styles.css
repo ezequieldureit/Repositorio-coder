@@ -125,7 +125,7 @@
     margin: auto; }
 
 .servicios__right {
-  background: url("/img/servicios/img2.jpg");
+  background: url("../img/servicios/img2.jpg");
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -167,7 +167,7 @@
     margin: auto; }
 
 .servicios2__left {
-  background: url("/img/servicios/img1.jpg");
+  background: url("../img/servicios/img1.jpg");
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -250,7 +250,7 @@ footer {
   justify-content: flex-start; }
 
 .servicios2__left--modificado {
-  background: url("/img/quienessomos/who5.jpg");
+  background: url("../img/quienessomos/who5.jpg");
   background-size: cover;
   background-position: center;
   width: 50%;
