@@ -153,7 +153,7 @@
       flex-direction: row; } }
 
 .servicios__left {
-  height: 1100px;
+  height: 1200px;
   width: 100%;
   padding: 30px; }
   @media screen and (min-width: 1024px) {
@@ -212,7 +212,7 @@ p {
 
 .servicios2__right {
   background-color: #391e46;
-  height: 1100px;
+  height: 1200px;
   width: 100%;
   padding: 30px; }
   @media screen and (min-width: 1024px) {
