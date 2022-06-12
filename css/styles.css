@@ -1,0 +1,502 @@
+.header nav {
+  height: 100%; }
+
+.header .logo img {
+  width: 120px;
+  padding: 20px; }
+
+@font-face {
+  font-family: "HKGrotesk-Regular";
+  src: url(../fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf); }
+
+/* RESET CSS AND GENERAL FONT SELECTION*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "HKGrotesk-Regular"; }
+
+/*CSS CUSTOM PROPERTIES FOR ANIMATE*/
+:root {
+  --animate-duration: 3s;
+  --animate-delay: 0.9s; }
+
+/*  CUSTOM BREAKPOINTS */
+/* HERO CSS INDEX PAGE*/
+.hero {
+  background: url("../img/home-img.jpg");
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center; }
+  .hero:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5; }
+
+.hero__info {
+  padding: 0.3em;
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: white; }
+  .hero__info h1 {
+    font-size: 6vw;
+    padding-bottom: 30px;
+    color: white; }
+    @media screen and (min-width: 1024px) {
+      .hero__info h1 {
+        font-size: 3vw; } }
+  .hero__info p {
+    font-size: 1rem;
+    color: white; }
+    @media screen and (min-width: 1024px) {
+      .hero__info p {
+        font-size: 1.2vw; } }
+
+/* LOGOS CLIENTES CSS INDEX PAGE*/
+.logosClientes {
+  background-color: #e7e6ef;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100vw; }
+
+.logosClientes__titulo {
+  font-size: 8vw;
+  text-align: center;
+  padding: 30px; }
+  @media screen and (min-width: 1024px) {
+    .logosClientes__titulo {
+      font-size: 3vw;
+      padding: 50px; } }
+
+.logosClientes__principal {
+  display: flex; }
+
+.logosClientes__items {
+  padding: 20px;
+  margin-bottom: 30px; }
+  .logosClientes__items img {
+    width: 50px; }
+    @media screen and (min-width: 768px) {
+      .logosClientes__items img {
+        width: 70px; } }
+    @media screen and (min-width: 1024px) {
+      .logosClientes__items img {
+        width: 100px;
+        padding-top: 10px; } }
+
+/* QUIENES SOMOS CSS INDEX PAGE*/
+.quienesSomos {
+  background-color: #392f5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100vw; }
+  .quienesSomos h1 {
+    text-align: center;
+    font-size: 8vw;
+    color: white;
+    padding-top: 50px; }
+    @media screen and (min-width: 1024px) {
+      .quienesSomos h1 {
+        font-size: 3vw; } }
+  .quienesSomos p {
+    font-size: 1rem;
+    color: white;
+    padding: 30px;
+    text-align: center; }
+  .quienesSomos video {
+    padding: 10px;
+    width: 50%;
+    margin-top: 40px;
+    border-radius: 3rem; }
+
+.quienesSomos__img {
+  display: flex;
+  padding-top: 100px;
+  text-align: center;
+  flex-direction: column; }
+  @media screen and (min-width: 1024px) {
+    .quienesSomos__img {
+      flex-direction: row; } }
+  .quienesSomos__img img {
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px; }
+    @media screen and (min-width: 1024px) {
+      .quienesSomos__img img {
+        width: 300px; } }
+  .quienesSomos__img p {
+    font-weight: bold; }
+
+/* SERVICIOS CSS INDEX PAGE*/
+.servicios {
+  display: flex;
+  flex-direction: column-reverse; }
+  @media screen and (min-width: 1024px) {
+    .servicios {
+      flex-direction: row; } }
+
+.servicios__left {
+  height: 900px;
+  width: 100%;
+  padding: 30px; }
+  @media screen and (min-width: 1024px) {
+    .servicios__left {
+      height: 100vh;
+      width: 50%; } }
+
+h1 {
+  color: black;
+  font-size: 8vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px; }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 3vw;
+      padding: 50px; } }
+
+p {
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  width: 70%;
+  margin: auto; }
+
+.servicios__right {
+  background: url("../img/servicios/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .servicios__right {
+      height: 100vh;
+      width: 50%; } }
+
+.servicios__link {
+  text-align: center; }
+  .servicios__link a {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none; }
+
+.servicios2 {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 1024px) {
+    .servicios2 {
+      flex-direction: row; } }
+
+.servicios2__right {
+  background-color: #391e46;
+  height: 900px;
+  width: 100%;
+  padding: 30px; }
+  @media screen and (min-width: 1024px) {
+    .servicios2__right {
+      height: 100vh;
+      width: 50%; } }
+  .servicios2__right h1 {
+    color: white;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+    @media screen and (min-width: 1024px) {
+      .servicios2__right h1 {
+        font-size: 3vw;
+        padding: 50px; } }
+  .servicios2__right p {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    width: 70%;
+    margin: auto; }
+
+.servicios2__left {
+  background: url("../img/servicios/img1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .servicios2__left {
+      height: 100vh;
+      width: 50%; } }
+
+.servicios2__link {
+  text-align: center;
+  padding: 50px; }
+  .servicios2__link a {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none; }
+
+/* PORTFOLIO CSS INDEX PAGE*/
+.portfolio {
+  background-color: #e7e6ef;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  padding-top: 50px;
+  padding-bottom: 10px; }
+  @media screen and (min-width: 1024px) {
+    .portfolio {
+      height: 1300px; } }
+  .portfolio h1 {
+    line-height: 1.5;
+    font-size: 8vw;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 1024px) {
+      .portfolio h1 {
+        font-size: 3vw; } }
+
+/* CONTACTO CSS INDEX PAGE*/
+.contacto {
+  background-color: #391e46;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  height: 100%;
+  width: 100vw; }
+  @media screen and (min-width: 1024px) {
+    .contacto {
+      flex-direction: row; } }
+
+.contacto__left h2 {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px; }
+
+.contacto__left a {
+  color: white;
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center; }
+
+.contacto__medium h2 {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center; }
+
+.contacto__medium p {
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center; }
+
+.contacto__right img {
+  width: 200px;
+  padding: 20px; }
+
+/* FOOTER CSS INDEX PAGE*/
+footer {
+  background-color: #e7e6ef;
+  height: 50px;
+  width: 100vw;
+  text-align: center; }
+  footer p {
+    padding: 10px;
+    font-weight: bold; }
+
+/* QUIENES SOMOS CSS PAGE */
+.hero--quienesSomos {
+  background-image: url("../img/quienessomos/hero-quienessomos.jpg");
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start; }
+  .hero--quienesSomos:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5; }
+
+.servicios2__right--modificado {
+  padding: 80px;
+  height: 1000px;
+  width: 100%; }
+
+.servicios2__right--modificado h1 {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.servicios2__left--modificado {
+  background: url("../img/quienessomos/who5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: auto; }
+  @media screen and (min-width: 1024px) {
+    .servicios2__left--modificado {
+      height: 100vh;
+      width: 50%; } }
+
+.quienesSomos--modificado {
+  background-color: white; }
+  .quienesSomos--modificado h1 {
+    color: black; }
+  .quienesSomos--modificado p {
+    color: black;
+    font-size: 1rem; }
+
+/* SERVICIOS CSS PAGE*/
+.hero--servicios {
+  background-image: url("../img/servicios/hero-servicios.jpg");
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center; }
+  .hero--servicios:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5; }
+
+/* PORTFOLIO CSS PAGE*/
+.hero--portfolio {
+  background-image: url("../img/portfolio/hero-portfolio.jpg");
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center; }
+  .hero--portfolio:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5; }
+
+/* CONTACTO CSS PAGE*/
+.hero--contacto {
+  background-image: url("../img/contacto/hero-contacto.jpg");
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center; }
+  .hero--contacto:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #391e46;
+    opacity: 0.5; }
+
+/* CUSTOM CSS CONTACT FORM */
+.container-form {
+  width: 100%;
+  max-width: 1200px;
+  height: 560px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px; }
+
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px; }
+
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px; }
+
+.container-form form .campo,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px; }
+
+.container-form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px; }
+
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #391e46;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease; }
+
+.container-form .btn-enviar:hover {
+  background: #392f5a; }
+
+.carousel-inner {
+  width: 100%; }
+
+.portfolio {
+  height: auto; }
+
+.logosClientes__principal {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+
+.quienesSomos video {
+  width: 80%; }
+
+.servicios__left ul li {
+  text-align: left;
+  font-size: 2vh;
+  padding: 10px; }
