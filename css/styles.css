@@ -330,7 +330,7 @@ p {
 /* FOOTER CSS INDEX PAGE*/
 footer {
   background-color: #e7e6ef;
-  height: 50px;
+  height: 100%;
   width: 100vw;
   text-align: center; }
   footer p {
