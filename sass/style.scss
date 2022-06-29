@@ -454,66 +454,18 @@ footer {
   }
 }
 
-/* CUSTOM CSS CONTACT FORM */
+/*CSS CONTACT FORM */
 
-.container-form {
-  width: 100%;
-  max-width: 1200px;
-  height: 560px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 90px;
-  padding-bottom: 150px;
-  padding: 200px;
-  @include mobile-first(lg) {
-    flex-direction: row;
-  }
-
-  h2 {
-    margin-bottom: 15px;
-    font-size: 35px;
-  }
-  p {
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
+.contact__form {
+  height: 100%;
+  width: 100vw;
+  padding: 30px;
 }
 
-.container-form form .campo,
-textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
+.bg {
+  background-image: url(../img/contacto/contact_us.png);
+  background-position:  25% 75%;
+  
+
 }
 
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px;
-}
-
-.container-form .btn-enviar {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  outline: 0px;
-  background: #391e46;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 300ms ease;
-  &:hover {
-    background: #392f5a;
-  }
-}
-
-.maps {
-  padding: 50px;
-  text-align: end;
-}

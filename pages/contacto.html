@@ -69,18 +69,32 @@
           <h1 class="hero__title">Contacto</h1>
         </div>
       </section>
-      <section class="container-form">
-        
-        <form action="#" autocomplete="off">
-            <h2>Contactanos</h2>
-            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo" required>
-            <input type="email" name="email" placeholder="Tu Email" class="campo" required>
-            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
-            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
-        </form>
-        <div class="maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4146289388955!2d-58.45082154897481!3d-34.56837378037281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c5a0047627%3A0x1e48d4e102b289a4!2sAv.%20Cabildo%201234%2C%20C1426AAZ%20CABA!5e0!3m2!1sen!2sar!4v1656366606294!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="container contact__form">
+        <div class="row">
+          <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
+          <div class="col bg-white p-5 rounded-end">
+            <h2 class="fw-bold text-center py-5">Contactanos. Estamos cerca!</h2>
+
+          <form action="#">
+            <div class="mb-4">
+              <label for="name" class="form-label"  >Nombre y Apellido</label>
+                <input type="name" class="form-control" name="name" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label" >Correo electrónico</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-4">
+              <label for="exampleFormControlTextarea1" class="form-label">Ingrese su mensaje</label>
+  <textarea class="form-control"  name="textarea" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </div>
+          </form>
+          </div>
         </div>
+      </section>
       </section>
       <section class="contacto">
         <div class="contacto__left">
