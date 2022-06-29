@@ -3,7 +3,7 @@
 Este proyecto esta orientado al trabajo final del Curso Desarrollo Web de Coder House.
 
 
-  <a href="https://leonidasesteban.com/cursos/javascript">
+  <a href="https://repositorio-coder.vercel.app/">
     Ir a la web desplegada 
   </a>
 
