@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ANIMATION CSS LINK  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- BOOTSTRAP CSS LINK -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -14,7 +18,7 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="../img/Logo-negro.png">
+    <link rel="icon" type="image/x-icon" href="../media/logos/Logo-negro.png">
     <title>Coder House Project</title>
     <title>Contacto</title>
   </head>
@@ -23,7 +27,7 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#"
-            ><img src="../img/Logo-negro.png" alt=""
+            ><img src="../media/logos/Logo-negro.png" alt="Logo Datanova"
           /></a>
           <button
             class="navbar-toggler"
@@ -66,14 +70,14 @@
     <main>
       <section class="hero--contacto">
         <div class="hero__info">
-          <h1 class="hero__title">Contacto</h1>
+          <h1 class="hero__title  animate__animated animate__fadeIn">Contacto</h1>
         </div>
       </section>
       <section class="container contact__form">
         <div class="row">
           <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
           <div class="col bg-white p-5 rounded-end">
-            <h2 class="fw-bold text-center py-5">Contactanos. Estamos cerca!</h2>
+            <h2 class="fw-bold py-5  animate__animated animate__fadeIn">Contactanos. Estamos cerca!</h2>
 
           <form action="#">
             <div class="mb-4">
@@ -88,8 +92,8 @@
               <label for="exampleFormControlTextarea1" class="form-label">Ingrese su mensaje</label>
   <textarea class="form-control"  name="textarea" required></textarea>
             </div>
-            <div class="d-grid gap-2 col-6 d-md-block">
-              <button type="submit" class="btn btn-dark">Enviar consulta</button>
+            <div class="d-grid gap-2 col-6">
+              <button type="submit" class="btn btn-dark ">Enviar</button>
             </div>
           </form>
           </div>
@@ -97,27 +101,32 @@
       </section>
       </section>
       <section class="contacto">
-        <div class="contacto__left">
+        <div class="contacto__left animate__animated animate__fadeIn">
           <h3>Navigate</h3>
           <a href="../index.html">Home</a>
           <a href="quienessomos.html">Quienes somos</a>
           <a href="servicios.html">Servicios</a>
           <a href="portfolio.html">Portfolio</a>
         </div>
-        <div class="contacto__medium">
+        <div class="contacto__medium animate__animated animate__fadeIn">
           <h3>Contactanos</h3>
           <p>Dirección:Av. Cabildo 1234</p>
-          <p>Teléfono:+54-12345678</p>
-          <p>Email:coderhouseproject@example.com</p>
+          <p>Teléfono:+54-1121582109</p>
+          <p>Email:info@datanova.com.ar</p>
         </div>
-        <div class="contacto__right">
-          <img src="../img/logo_blanco.png" alt="" />
+        <div class="contacto__right animate__animated animate__fadeIn">
+          <img src="../media/logos/logo_blanco.png" alt="Logo Datanova" />
         </div>
         
       </section>
     </main>
     <footer>
-      <p>Copyright @Coder House Project 2022</p>
+      <ul class="socialmedia">
+        <li><a href="#" class="facebook animate__animated animate__fadeIn"><img src="../media/socialmedia/facebook.svg" alt="Logo Facebook"></a></li>
+        <li><a href="#" class="instagram animate__animated animate__fadeIn"><img src="../media/socialmedia/instagram.svg" alt="Logo Instagram"></a></li>
+        <li><a href="#" class="linkedin animate__animated animate__fadeIn"><img src="../media/socialmedia/linkedin.svg" alt="Logo Linkedin"></a></li>
+      </ul>
+      <p>Copyright @Datanova 2022</p>
     </footer>
     <!-- JAVASCRIPT BOOTSTRAP LINK -->
     <script

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ANIMATION CSS LINK  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- BOOTSTRAP CSS LINK -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -14,16 +18,16 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="../img/Logo-negro.png">
+    <link rel="icon" type="image/x-icon" href="../media/logos/Logo-negro.png" />
     <title>Coder House Project</title>
     <title>Portfolio</title>
   </head>
-  <body>
+  <body> 
     <header class="header">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#"
-            ><img src="../img/Logo-negro.png" alt=""
+            ><img src="../media/logos/Logo-negro.png" alt="Logo Datanova"
           /></a>
           <button
             class="navbar-toggler"
@@ -39,10 +43,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Home</a
                 >
               </li>
@@ -66,61 +67,194 @@
     <main>
       <section class="hero--portfolio">
         <div class="hero__info">
-          <h1 class="hero__title">Portfolio</h1>
+          <h1 class="hero__title  animate__animated animate__fadeIn">Portfolio</h1>
         </div>
       </section>
-      <section class="portfolio">
-        <h1>Portfolio</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../img/portfolio/img1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/portfolio/img2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/portfolio/img3.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
 
+      <!-- PORTFOLIO ON-PREMISES -->
+      <section class="portfoliosection__premises">
+        <h2 class="portfoliosection__titulo portfoliosection__titulo--premises  animate__animated animate__fadeIn">
+          Servicios On Premises
+        </h2>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="../media/portfolio/card1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Instalación y configuración de storage</h5>
+              <p class="card-text">
+                Realizamos instalación y configuración de storage en datacenter
+                del cliente. En este servicio además incluimos discos SSD
+                redundantes por alguna incidencia en perdida de información.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Oficinas Digico, Buenos Aires, Argentina.</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../media/portfolio/card2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Instalación y configuración de sistema de gestión de tickets
+              </h5>
+              <p class="card-text">
+                Instalamos y configuramos sistema propio de gestión de tickets
+                de troubleshooting de redes. Además, capacitamos a personal de
+                sistemas para uso del mismo.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Oficinas Warehouse, Rosario, Argentina.</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../media/portfolio/card3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Instalación de Radius Server para usuarios internos
+              </h5>
+              <p class="card-text">
+                Instalamos y configuramos Radius Server en datacenter del
+                cliente para configurar roles de usuarios y permisos dentro de
+                la corporación.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Oficinas NewTech, Lanús, Argentina.</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- PORTFOLIO CLOUD -->
+      <section class="portfoliosection__cloud">
+        <h2 class="portfoliosection__titulo portfoliosection__titulo--cloud animate__animated animate__fadeIn">
+          Servicios Cloud
+        </h2>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="../media/portfolio/card4.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Migración integral de servicios internos On Premises a Nube
+              </h5>
+              <p class="card-text">
+                Migramos tecnología completa de todos los servicios utilizados
+                en datacenter on site en la corporación a AWS. Se realizó la
+                instalación integral en 72 horas.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Oficinas Techworld, Buenos Aires, Argentina.</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../media/portfolio/card5.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Migración de Webs hosteadas localmente en Datacenter a VPS AWS
+                auto escalable
+              </h5>
+              <p class="card-text">
+                Migramos de manera integral la web que se utiliza para control
+                de stock del cliente a la nube de AWS con capacidad de
+                autoescalarse en relacion a la capacidad que necesite el
+                servidor.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >Oficinas RentForSure, Salta, Argentina.</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../media/portfolio/card6.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">VPN Site-to-Site con Mikrotik y AWS</h5>
+              <p class="card-text">
+                Creamos un tunel VPN entre oficinas de San Diego y California,
+                EEUU. Las tecnologías que utilizamos son Mikrotik para los
+                routers de borde y usamos AWS para interconectar los puntos.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Oficinas Varmont, EEUU.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="contacto">
-        <div class="contacto__left">
+        <div class="contacto__left  animate__animated animate__fadeIn">
           <h3>Navigate</h3>
           <a href="../index.html">Home</a>
           <a href="quienessomos.html">Quienes somos</a>
           <a href="servicios.html">Servicios</a>
           <a href="contacto.html">Contacto</a>
-          
         </div>
-        <div class="contacto__medium">
+        <div class="contacto__medium  animate__animated animate__fadeIn">
           <h3>Contactanos</h3>
           <p>Dirección:Av. Cabildo 1234</p>
-          <p>Teléfono:+54-12345678</p>
-          <p>Email:coderhouseproject@example.com</p>
+          <p>Teléfono:+54-1121582109</p>
+          <p>Email:info@datanova.com.ar</p>
         </div>
-        <div class="contacto__right">
-          <img src="../img/logo_blanco.png" alt="" />
+        <div class="contacto__right  animate__animated animate__fadeIn">
+          <img src="../media/logos/logo_blanco.png" alt="Logo Datanova" />
         </div>
       </section>
     </main>
     <footer>
-      <p>Copyright @Coder House Project 2022</p>
+      <ul class="socialmedia">
+        <li>
+          <a href="#" class="facebook animate__animated animate__fadeIn"
+            ><img src="../media/socialmedia/facebook.svg" alt="Logo Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="instagram animate__animated animate__fadeIn"
+            ><img src="../media/socialmedia/instagram.svg" alt="Logo Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="linkedin animate__animated animate__fadeIn"
+            ><img src="../media/socialmedia/linkedin.svg" alt="Logo Linkedin"
+          /></a>
+        </li>
+      </ul>
+      <p>Copyright @Datanova 2022</p>
     </footer>
     <!-- JAVASCRIPT BOOTSTRAP LINK -->
     <script
