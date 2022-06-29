@@ -260,7 +260,6 @@ $breakpoints: (
     }
     @include mobile-first(xl) {
       height: 100vh;
-      
     }
   }
   &__link {
@@ -289,14 +288,14 @@ $breakpoints: (
     background-color: $base-color;
     @include mid-section1;
     @include mobile-first(md) {
-      height: 100vh;
+      height: 130vh;
     }
     @include mobile-first(lg) {
       height: 130vh;
       width: 50%;
     }
     @include mobile-first(xl) {
-      height: 100vh;
+      height: 110vh;
       width: 50%;
     }
 
@@ -336,37 +335,45 @@ $breakpoints: (
     &--resizesomos {
       height: 700px;
       @include mobile-first(lg) {
-        height: 110vh;
+        height: 120vh;
+      }
+      @include mobile-first(xl) {
+        height: 100vh;
       }
     }
   }
   &__left {
     background: url("../media/servicios/servicio1.jpg");
     @include mid-section2;
-    
+
+    @include mobile-first(lg) {
+      height: 130vh;
+      width: 50%;
+    }
+
     @include mobile-first(xl) {
       height: 100vh;
       width: 50%;
     }
-    
+
     &--modificado {
       background: url("../media/quienessomos/who5.jpg");
       background-size: cover;
       background-position: center;
       height: 900px;
-      width: 100%;   
+      width: 100%;
+
+      @include mobile-first(lg) {
+        height: 120vh;
+      }
+
       @include mobile-first(xl) {
         height: 100vh;
-        
       }
     }
-    @include mobile-first(lg) {
-      height: 130vh;
-      width: 50%;
-    }
+
     @include mobile-first(xl) {
-      height: 100vh;
-      
+      height: 110vh;
     }
   }
   &__link {
