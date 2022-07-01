@@ -249,7 +249,7 @@
       @media screen and (min-width: 1024px) {
         .servicios__left h2 {
           font-size: 6vh;
-          padding: 50px; } }
+          padding: 20px; } }
     .servicios__left p {
       color: black;
       text-align: center;
@@ -318,7 +318,7 @@
       @media screen and (min-width: 1024px) {
         .servicios2__right h2 {
           font-size: 6vh;
-          padding: 50px; } }
+          padding: 20px; } }
     .servicios2__right p {
       color: white;
       text-align: center;
